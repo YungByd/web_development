@@ -1,0 +1,444 @@
+.container
+{
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+body
+{
+    margin-top: 0;
+}
+
+.photo_quotes
+{
+    display: flex;
+}
+
+.quote
+{
+    font: italic 28px/42px Georgia;
+    color: #fff;
+}
+
+.quote::before
+{
+    content: '';
+}
+
+.quotes
+{
+    padding-top: 50px;
+    margin-left: 60px;
+}
+
+.text_quote
+{
+    margin: 28px 0 0 63px;
+}
+
+.author
+{
+    font: 600 16px/42px Open Sans;
+    color: #fff;
+    margin: 2px 0 0 3px;
+}
+
+.image
+{
+    border-radius: 5px;
+    width: 330px;
+    height: 350px;
+}
+
+.main_information
+{
+    display: flex;
+    margin-top: 10px;
+}
+
+.lists
+{
+    width: 330px;
+    margin-top: 32px;
+}
+
+.name
+{
+    font: 700 46px/42px Open Sans;
+    color: #333;
+}
+
+.right_information
+{
+    margin-left: 66px;
+    margin-top: -158px;
+    width: 570px;
+}
+
+.list_title
+{
+    font: 600 24px/32px Open Sans;
+    color: #15a98c;
+}
+
+.element
+{
+    font: 18px/36px Georgia;
+    color: #555;
+    margin: 13px 0 40px 0;
+    padding-left: 20px;
+}
+
+.line
+{
+    width: 60px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #45c3aa;
+    margin: 0 0 42px 0;
+}
+
+.text
+{
+    font: 18px/32px Georgia;
+    color: #555;
+    margin: 0 0 41px 0;
+}
+
+.hobby_title
+{
+    font: 400 36px/42px Open Sans;
+    color: #333;
+    margin: 43px 0 14px 0;
+}
+
+.vk_link
+{
+    font: 19px/32px Georgia;
+    color: #15a98b;
+    position: relative;
+}
+
+.vk_link::after
+{
+    content: '\2192';
+    display: inline-block;
+    position: absolute;
+    left: 121px;
+}
+
+.background
+{
+    background: url("../images/background.jpg") no-repeat;
+    z-index: -1;
+    background-position-y: 50px;
+    height: 450px;
+    position: absolute;
+    width: 100%; 
+}
+
+.navigation_bar
+{
+    display: flex;
+    margin: 0;
+    padding-left: 0;
+    height: 50px;
+    list-style-type: none;
+}
+
+.top_information
+{
+    margin-top: 208px;
+}
+
+.about_me
+{
+    font: 19px/32px Georgia;
+    color: #333;
+    padding: 10px 20px 8px 45px;
+    text-decoration: none;
+    background: url("../images/about_me_black.png") no-repeat;
+    display: block;
+    background-position: 21px;
+    box-sizing: border-box;
+    transition: 0.4s;
+    background-position-y: 17px
+}
+
+.about_me:hover
+{
+    background: #15a98b url(../images/about_me_white.png) no-repeat center top;
+    color: #ffe;
+    background-position: 21px;
+    background-position-y: 17px;
+    transition: 0.4s;
+}
+
+.my_hobby
+{
+    font: 19px/32px Georgia;
+    color: #333;
+    padding: 10px 20px 8px 48px;
+    text-decoration: none;
+    background: url("../images/hobby_black.png") no-repeat;
+    display: block;
+    background-position: 21px;
+    box-sizing: border-box;
+    transition: 0.4s;
+    background-position-y: 17px;
+}
+
+.my_hobby:hover
+{
+    background: #15a98b url(../images/hobby_white.png) no-repeat center top;
+    color: #ffe;
+    background-position: 21px;
+    background-position-y: 17px;
+    transition: 0.4s;
+}
+
+.films
+{
+    font: 19px/32px Georgia;
+    color: #333;
+    padding: 10px 21px 8px 46px;
+    text-decoration: none;
+    background: url("../images/video_black.png") no-repeat;
+    display: block;
+    background-position: 20px;
+    box-sizing: border-box;
+    transition: 0.4s;
+    background-position-y: 18px;
+
+}
+
+.films:hover
+{
+    background: #15a98b url(../images/video_white.png) no-repeat center top;
+    color: #ffe;
+    background-position: 21px;
+    background-position-y: 18px;
+    transition: 0.4s;
+}
+
+.film
+{
+    width: 285px;
+    box-sizing: border-box;
+    margin-right: 20px;
+}
+
+
+
+.favourite_films
+{
+    font: normal 36px Open Sans;
+    color: #333;
+    margin: 90px 0 29px 0;
+}
+
+.film_blocks
+{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.film_board
+{
+    margin: 56px 0 0 -120px;
+    width: 1200px;
+}
+
+.film_picture
+{
+    width: 285px;
+    height: 190px;
+    border-radius: 6px;
+}
+
+.film_name
+{
+    font: Bold 22px Open Sans;
+    color: #333;
+    margin:21px 0 18px 0;
+}
+
+.film_text
+{
+    font: 16px/28px Georgia;
+    color: #555;
+}
+.film_key
+{
+    border-radius: 5px;
+    display: block;
+    margin: 38px 0 0 481px;
+    font: 19px/32px Georgia;
+    text-decoration: none;
+    color: #f5f5f5;
+    background-color: #15a98c;
+    width: 220px;
+    height: 50px;
+    text-align: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+    transition: 0.4s;
+}
+
+.reply_form
+{
+    max-width: 540px;
+    margin: 0 auto;
+    padding-left: 8px;
+}
+
+.reply_title
+{
+    text-align: center;
+    margin: 57px 7px 21px 0;
+}
+
+.left_line
+{
+    position: relative;
+    left: 247px;
+    top: 56px;
+    display: inline-block;
+    height: 1px;
+    width: 200px;
+    background: #c4c4c4;
+}
+
+.right_line
+{
+    position: relative;
+    right: 250px;
+    top: -62px;
+    display: inline-block;
+    height: 1px;
+    width: 200px;
+    background: #c4c4c4;
+}
+
+.reply_me
+{
+    font: normal 35px/42px Open Sans;
+}
+
+.form_field
+{
+    margin-bottom: 22px;
+}
+
+.label
+{
+    font: 400 20px/32px Open Sans;
+    color: #333;
+}
+
+.star
+{
+    color: red;
+    font-size: 24px;
+}    
+
+.name_field
+{
+    margin: 5px 0 0 2px;
+    border: 2px solid #c9c9c9;
+    width: 524px;
+    height: 45px;
+    font: 400 18px 'Open Sans', sans-serif;
+    padding: 2px 0 0 12px;
+    border-radius: 3px;
+}
+
+.select
+{
+    margin: 4px 0 18px 2px;
+    width: 540px;
+    height: 50px;
+    border: 2px solid #c9c9c9;
+    color: #555;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(../images/arrow.png) no-repeat;
+    background-position: 497px 14px;
+    padding-left: 15px;
+    font: 18px Open Sans, sans-serif;
+    border-radius: 3px;
+}
+
+.sex
+{
+    margin: 23px 0 38px 0;
+}
+
+.man
+{
+    padding-right: 38px;
+    font: 18px Open Sans;
+}
+
+.sex_radio
+{
+    margin-top: 9px;
+}
+
+.form_radio
+{
+    margin: 0 3px 0 1px;
+}
+
+.button_send
+{
+    cursor: pointer;
+    border: 1px solid #f5f5f5;
+    border-radius: 5px;
+    width: 220px;
+    height: 50px;
+    font: 19px Georgia, serif;
+    color: #f5f5f5;
+    background-color: #15a98c;
+    margin-left: 2px;
+}
+
+.message
+{
+    margin: 3px 0 46px 2px;
+    border: 2px solid #c9c9c9;
+    resize: none;
+    color: #555;
+    font: 18px Open Sans, sans-serif;
+    box-sizing: border-box;
+    height: 150px;
+    width: 100%;
+    padding: 15px 0 0 12px;
+    border-radius: 3px; 
+}
+
+.star
+{
+    color: red;
+    font-size: 24px;
+}
+
+.page_end
+{
+    display: block;
+    position: absolute;
+    text-align: center;
+    font: 16px/32px Georgia;
+    color: #555;
+    padding: 67px 0 0 113px;
+}
+
+.name_field:focus,
+.select:focus,
+.message:focus {
+    outline: none;
+    border: 2px solid #15a98c;
+    border-radius: 3px;
+}
