@@ -1,12 +1,585 @@
-.container
+.filmPicture
 {
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.background
+{
+    background: url("../images/background.jpg") no-repeat;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 203vw;
+    background-position-y: 35vw;
+    background-size: 130vw;
+}
+
+.image
+{
+    width: 70vw;
+    border-radius: 5px;
+    padding-top: 5vw;
+}
+
+.navigationBar
+{
+    margin: 0;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.aboutMe:hover,
+.myHobby:hover,
+.films:hover
+{
+    transition: 0.4s;
+    background: #15a98b;
+    color: #ffe;
+    padding: 2% 5%;
+}
+
+.aboutMe,
+.myHobby,
+.films
+{
+    color: #333;
+    text-decoration: none;
+    display: block;
+    box-sizing: border-box;
+    font: 7vw/8vw Georgia;
+    transition: 0.4s;
+    text-align: center;
+    padding: 2% 5%;
+}    
+
+.topInformation
+{
+    padding: 5vw;
+}
+
+.name
+{
+    color: #000;
+    margin: 5vw 0;
+    font: 700 13vw/12vw Open Sans, sans-serif;
+}
+
+.quote
+{
+    color: #000;
+    font: italic 8vw/10vw Georgia;
+    margin-bottom: 0;
+}
+
+.author
+{
+    font: 600 6vw/8vw Open Sans, sans-serif;
+    color: #000;
+    margin: 3vw 0;
+}
+
+.listTitle
+{
+    font: 600 24px/28px Open Sans, sans-serif;
+    color: #15a98c;
+    padding-left: 5vw;
+}
+
+.element
+{
+    color: #555;
+    font: 19px/21px Georgia;
+    padding-left: 10vw;
+    margin: 3vw 0;
+}
+
+.mainInformation,
+{
+    padding: 0 5vw;
+}
+
+.rightInformation
+{
+    padding: 5vw 5vw 0 5vw;
+}
+
+.text
+{
+    font: 19px/21px Georgia;
+    color: #555;
+    margin: 0;
+    padding-bottom: 3vw;
+}
+
+.lists
+{
+    padding-top: 5vw;
+}
+
+.hobbyTitle
+{
+    font: normal 30px Open Sans, sans-serif;
+    margin: 2vw 0;
 }
 
 body
 {
     margin: 0;
+}
+
+.vkLink::after
+{
+    content: "\2192";
+    display: inline-block;
+    position: absolute;
+}
+.vkLink
+{
+    color: #15a98c;
+    font: 24px Georgia;
+    position: relative;
+    text-decoration: underline;
+    transition: 0.4s;
+    padding: 5vw 0;
+}
+
+.filmBoard
+{
+    background: #f9f9f9;
+    padding-bottom: 2vw;
+}
+
+.favouriteFilms
+{
+    font: normal 34px Open Sans, sans-serif;
+    color: #333;
+    padding: 5vw 5vw 0 3vw;
+}
+
+.filmBoard
+{
+    padding: 0 5vw 10vw 5vw;
+}
+
+.film
+{
+    margin-bottom: 10vw;
+    box-sizing: border-box; 
+}
+
+.filmName
+{
+    font: 700 28px Open Sans, sans-serif;
+    color: #333;
+    margin: 1vw 0;
+}
+
+.filmText
+{
+    font: 19px/21px Georgia;
+    margin: 2vw 0;
+    color: #555;
+}
+
+.filmKey
+{
+    border-radius: 5px;
+    display: block;
+    text-decoration: none;
+    font: 7vw/8vw Georgia;
+    color: #f5f5f5;
+    background-color: #15a98c;
+    text-align: center;
+    padding: 5vw;
+    box-sizing: border-box;
+    transition: 0.4s;
+    margin: 0 5vw;
+}
+
+.replyForm
+{
+    padding: 0 5vw;
+}
+
+.replyTitle
+{
+    text-align: center;
+}
+
+.replyMe
+{
+    font: normal 9vw Open Sans, sans-serif;
+}
+
+.leftLine
+{
+    position: relative;
+    left: 40vw;
+    top: 15vw;
+    display: inline-block;
+    height: 1px;
+    width: 12vw;
+    background: #c4c4c4;
+}
+
+.rightLine
+{
+    position: relative;
+    right: 40vw;
+    top: -18vw;
+    display: inline-block;
+    height: 1px;
+    width: 12vw;
+    background: #c4c4c4;
+}
+
+.formField
+{
+    margin-bottom: 7vw; 
+}
+
+.label
+{
+    font: 400 7vw/8vw Open Sans, sans-serif;
+    color: #333;
+}
+
+.star
+{
+    color: red;
+    font-size: 8vw;
+}
+
+.nameField
+{
+    margin: 4vw 0 0 1vw;
+    border: 2px solid #c9c9c9;
+    width: 86vw;
+    height: 13vw;
+    font: 400 7vw Open Sans, sans-serif;
+    padding: 1vw 0 1vw 3vw;
+    border-radius: 1vw;
+}
+
+.nameField:hover
+{
+    cursor: pointer;
+}
+.select
+{
+    margin: 1vw 0 0 1vw;
+    width: 90vw;
+    height: 17vw;
+    border: 2px solid #c9c9c9;
+    color: #555;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url("../images/arrow.png") no-repeat;
+    background-position: 72vw 5vw;
+    padding-left: 5vw;
+    font: 400 7vw Open Sans, sans-serif;
+    border-radius: 1vw; 
+}
+
+.select:hover
+{
+    border-radius: 1vw;
+    border: 2px solid #a6a6a6;
+    cursor:pointer;
+}
+
+.sexRadio
+{
+    margin-top: 5vw; 
+}
+
+.man
+{
+    padding-right: 3vw;
+    font: 6vw Open Sans, sans-serif;
+}
+
+.sex
+{
+    padding-bottom: 5vw;
+}
+
+.message
+{
+    margin: 1vw 0 7vw 1vw;
+    border: 2px solid #c9c9c9;
+    resize: none;
+    color: #555;
+    font: 7vw Open Sans, sans-serif;
+    box-sizing: border-box;
+    height: 50vw;
+    width: 100%;
+    padding: 5vw 0 0 5vw;
+    border-radius: 3px;
+}
+
+.buttonSend
+{
+    height: 17vw;
+    cursor: pointer;
+    border: 1px solid #f5f5f5;
+    border-radius: 5px;
+    width: 100%;
+    font: 7vw Georgia, serif;
+    color: #f5f5f5;
+    background-color: #15a98c;
+}
+
+.formRadio,
+.message:hover
+{
+    cursor: pointer;
+}
+
+.nameField:focus,
+.select:focus,
+.message:focus
+{
+    outline: none;
+    border: 2px solid #15a98c;
+    border-radius: 3px;
+}
+
+.pageEnd
+{
+    display: block;
+    text-align: center;
+    font: 6vw/8vw Georgia;
+    color: #555;
+    padding: 5vw 2vw 5vw 2vw;
+    background-color: #f9f9f9; 
+}
+
+.quote::before
+{
+    content: '';
+}
+
+@media screen and (min-width: 481px)
+{
+    .navigationBar
+    {
+        display: flex;
+    }
+
+    .aboutMe,
+    .myHobby,
+    .films
+    {
+        font: 4vw Georgia;
+        padding: 3vw; 
+    }
+
+    .aboutMe:hover,
+    .myHobby:hover,
+    .films:hover
+    {
+        padding: 3vw; 
+    }
+
+    .aboutMeList
+    {
+        width: 23%;
+    }
+
+    .myHobbyList
+    {
+        width: 29%;
+    }
+
+    .filmsList
+    {
+        width: 48%;
+    }
+
+    .background
+    {
+        background-position-y: 10.6vw;
+        height: 110vw;
+    }
+
+    .image
+    {
+        width: 45vw;
+    }
+
+    .name
+    {
+        margin: 4vw 0;
+        font: 700 8vw/8vw Open Sans, sans-serif;
+    }
+
+    .author 
+    {
+        font: 600 3vw/3vw Open Sans, sans-serif;
+        margin: 2vw 0;
+    }
+
+    .quote
+    {
+        font: italic 6vw/7vw Georgia;
+    }
+
+    .element
+    {
+        margin: 2vw 0;
+    }
+
+    .lists 
+    {
+        padding-top: 3vw;
+    }
+
+    .rightInformation 
+    {
+        padding: 3vw 5vw;
+    }
+
+    .hobbyTitle
+    {
+        margin: 0;
+    }
+
+    .filmKey
+    {
+        font: 4vw Georgia;
+        width: 30vw;
+        height: 13vw;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 2vw;
+        height: 9vw; 
+    }
+
+    .film
+    {
+        margin-bottom: 5vw;
+    }
+    
+    .replyForm
+    {
+        width: 70%;
+        margin: auto;
+    }
+
+    .replyMe
+    {
+    font-size: 7vw;
+    margin: 3vw 0px;
+    }
+
+    .filmBoard
+    {
+        padding: 0 5vw 4vw 5vw;
+    }
+
+    .rightLine 
+    {
+    position: relative;
+    right: 38vw;
+    top: -10.5vw;
+    display: inline-block;
+    height: 1px;
+    width: 18vw;
+    background: #c4c4c4;
+    }
+
+    .leftLine 
+    {
+    position: relative;
+    left: 40vw;
+    top: 9vw;
+    display: inline-block;
+    height: 1px;
+    width: 20vw;
+    background: #c4c4c4;
+    }
+
+    .label
+    {
+        font: 400 5vw/7vw Open Sans, sans-serif;
+    }
+
+    .nameField
+    {
+        width: 70vw;
+        height: 8vw;
+        font: 400 5vw Open Sans, sans-serif;
+    }
+
+    .select
+    {
+        font: 400 5vw Open Sans, sans-serif;
+        width: 74vw;
+        height: 11vw;
+        background-position: 64vw 4vw;
+    }
+
+    .man
+    {
+        font: 5vw Open Sans, sans-serif;
+    }
+
+    .message
+    {
+        padding: 3vw 0 0 3vw;
+        height: 30vw;
+        font: 5vw Open Sans, sans-serif;
+    }
+
+    .buttonSend
+    {
+        font: 5vw Georgia, serif;
+        height: 10vw;
+    }
+
+    .pageEnd
+    {
+        font: 5vw/7vw Georgia;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1025px)
+{
+.container
+{
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .photoQuotes
@@ -18,11 +591,6 @@ body
 {
     font: italic 28px/42px Georgia, serif;
     color: #fff;
-}
-
-.quote::before
-{
-    content: '';
 }
 
 .quotes
@@ -111,19 +679,23 @@ body
     font: 400 36px/42px Open Sans, sans-serif;
     color: #333;
     margin: 44px 0 14px 0;
+    gro
 }
 
 .vkLink
 {
     display: inline-block;
     margin: 1px 0 0 2px;
+    color: #32b49a;
     text-decoration: none; 
 }
 
 .vkLinkText
 {
     font: 19px/30px Georgia, serif;
-    color: #32b49a; 
+    color: #32b49a;
+    text-decoration: underline;
+ 
 }
 
 .background
@@ -441,4 +1013,5 @@ body
     outline: none;
     border: 2px solid #15a98c;
     border-radius: 3px;
+}
 }
