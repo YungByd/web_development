@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <title class="title">Дегтерев Виктор</title>
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&
     display=swap&subset=cyrillic-ext" rel="stylesheet" />
@@ -14,9 +15,9 @@
     <div class="container">
         <div class="navigation">
             <ul class="navigationBar">
-                <li><a href="#aboutMe" class="aboutMe">Обо мне</a></li>
-                <li><a href="#myHobby" class="myHobby">Мое хобби</a></li>
-                <li><a href="#films" class="films">Любимые фильмы</a></li>
+                <li class="aboutMeList"><a href="#aboutMe" class="aboutMe">Обо мне</a></li>
+                <li class="myHobbyList"><a href="#myHobby" class="myHobby">Мое хобби</a></li>
+                <li class="filmsList"><a href="#films" class="films">Любимые фильмы</a></li>
             </ul>
         </div>
         <div class="topInformation">
@@ -24,8 +25,9 @@
                 <div class="picture">
                     <img class="image" src="images/photo.png" alt="Моя фотография" />
                 </div>
+                <h1 class="name" id="aboutMe">Дегтерев Виктор</h1>
                 <div class="textQuote">
-                    <q class="quote">Восемьдесят процентов успеха - <br> это просто прийти</q>
+                    <q class="quote">Восемьдесят процентов успеха - это просто прийти</q>
                     <p class="author"><cite> — Вуди Аллен</cite></p>
                 </div>
             </div>
@@ -48,12 +50,10 @@
                 </ol>
             </div>
             <div class="rightInformation">
-                <h1 class="name" id="aboutMe">Дегтерев Виктор</h1>
-                <hr class="line" />
-                <p class="text">
-                    Русский советский поэт и драматург Владимир Владимирович <br> 
-                    Маяковский родился 19 июля (7 июля по старому стилю) <br> 
-                    1893 года в селе Багдади Кутаисской губернии России <br> 
+                                <p class="text">
+                    Русский советский поэт и драматург Владимир Владимирович
+                    Маяковский родился 19 июля (7 июля по старому стилю)
+                    1893 года в селе Багдади Кутаисской губернии России
                     (ныне Грузия) в семье лесничего. Его отец происходил из запорожских казаков, 
                     прадед отца был полковым есаулом Черноморских войск.
                 </p>
@@ -64,7 +64,7 @@
                     Григорьевич – в годы Гражданской войны от пуль не прятался, человек самой 
                     мирной профессии в тяжелую годину был комиссаром.
                 </p>
-                <a href="https://vk.com/yung_byd" class="vkLink"><span class="vkLinkText">Напиши мне →</span></a>
+               <a href="https://vk.com/yung_byd" class="vkLink">Напиши мне</a>
             </div>
         </div>
         <div class="filmBoard" id="films">
@@ -87,7 +87,7 @@
                     <h3 class="filmName">Криминальное чтиво</h3>
                     <p class="filmText">Двое бандитов Винсент Вега и Джулс Винфилд ведут 
                         философские беседы в перерывах между разборками и решением проблем с 
-                        должниками криминального босса Марселласа Уоллеса.<br>В первой 
+                        должниками криминального босса Марселласа Уоллеса.В первой 
                         истории Винсент проводит незабываемый вечер с женой Марселласа Мией. 
                         Во второй рассказывается о боксёре Бутче Кулидже, купленном Уоллесом, 
                         чтобы сдать бой. В третьей истории Винсент и Джулс по нелепой случайности 
@@ -169,4 +169,3 @@
 </body>
 
 </html>
-
